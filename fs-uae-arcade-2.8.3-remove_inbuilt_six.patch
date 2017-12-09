@@ -1,0 +1,19 @@
+diff -durN fs-uae-arcade-2.8.3.orig/setup.py fs-uae-arcade-2.8.3/setup.py
+--- fs-uae-arcade-2.8.3.orig/setup.py	2017-01-08 20:48:58.000000000 +0100
++++ fs-uae-arcade-2.8.3/setup.py	2017-10-15 18:51:35.819270252 +0200
+@@ -33,7 +33,6 @@
+     "launcher": "../fs-uae-launcher",
+     "OpenGL": "../fs-uae-launcher",
+     "oyoyo": "../fs-uae-launcher",
+-    "six": "../fs-uae-launcher",
+ }
+ packages = sorted(package_map.keys())
+ scripts = ["fs-uae-arcade"]
+@@ -60,7 +59,6 @@
+ res_dirs.append('fsui/res')
+ res_dirs.append('launcher/res')
+ res_dirs.append('oyoyo/res')
+-res_dirs.append('six/res')
+ 
+ 
+ def add_package(package_name, package_dir_name):
