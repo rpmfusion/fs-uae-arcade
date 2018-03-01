@@ -2,7 +2,7 @@
 
 Name:           fs-uae-arcade
 Version:        2.8.3
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Fullscreen game browser for FS-UAE
 
 #  The entire source code is GPLv2+ except oyoyo which is MIT
@@ -101,6 +101,9 @@ fi
 
 
 %changelog
+* Thu Mar 01 2018 RPM Fusion Release Engineering <leigh123linux@googlemail.com> - 2.8.3-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
+
 * Sun Oct 15 2017 Andrea Musuruane <musuruan@gmail.com> - 2.8.3-3
 - Added a virtual provide to note oyoyo is bundled
 - Amended License tag
