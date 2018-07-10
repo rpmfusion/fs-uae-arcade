@@ -2,7 +2,7 @@
 
 Name:           fs-uae-arcade
 Version:        2.8.3
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Fullscreen game browser for FS-UAE
 
 #  The entire source code is GPLv2+ except oyoyo which is MIT
@@ -86,6 +86,9 @@ ln -s %{_datadir}/fonts/liberation/LiberationSans-Bold.ttf \
 
 
 %changelog
+* Tue Jul 10 2018 Miro Hrončok <mhroncok@redhat.com> - 2.8.3-6
+- Rebuilt for Python 3.7
+
 * Sun May 20 2018 Andrea Musuruane <musuruan@gmail.com> - 2.8.3-5
 - Fixed AppData file (BZ #4845)
 - Used new AppData directory
