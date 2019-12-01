@@ -1,7 +1,7 @@
 %global __python %{__python3}
 
 Name:           fs-uae-arcade
-Version:        3.0.0
+Version:        3.0.2
 Release:        1%{?dist}
 Summary:        Fullscreen game browser for FS-UAE
 
@@ -68,7 +68,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
 
 # Symlink system font
 rm %{buildroot}%{_datadir}/%{name}/arcade/res/LiberationSans-Bold.ttf
-ln -s %{_datadir}/fonts/liberation/LiberationSans-Bold.ttf \
+ln -s %{_datadir}/fonts/liberation-sans/LiberationSans-Bold.ttf \
     %{buildroot}%{_datadir}/%{name}/arcade/res/LiberationSans-Bold.ttf
 
 
@@ -83,6 +83,9 @@ ln -s %{_datadir}/fonts/liberation/LiberationSans-Bold.ttf \
 
 
 %changelog
+* Sat Nov 30 2019 Andrea Musuruane <musuruan@gmail.com> - 3.0.2-1
+- Updated to new upstream release
+
 * Tue Aug 13 2019 Andrea Musuruane <musuruan@gmail.com> - 3.0.0-1
 - Updated to new upstream release
 
