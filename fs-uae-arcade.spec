@@ -2,7 +2,7 @@
 
 Name:           fs-uae-arcade
 Version:        3.1.63
-Release:        8%{?dist}
+Release:        9%{?dist}
 Summary:        Fullscreen game browser for FS-UAE
 
 #  The entire source code is GPLv2+ except oyoyo which is MIT
@@ -70,7 +70,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.appdata.xml
 
 # Symlink system font
 rm %{buildroot}%{_datadir}/%{name}/arcade/res/LiberationSans-Bold.ttf
-ln -s %{_datadir}/fonts/liberation-sans/LiberationSans-Bold.ttf \
+ln -s %{_datadir}/fonts/liberation-sans-fonts/LiberationSans-Bold.ttf \
     %{buildroot}%{_datadir}/%{name}/arcade/res/LiberationSans-Bold.ttf
 
 
@@ -85,6 +85,9 @@ ln -s %{_datadir}/fonts/liberation-sans/LiberationSans-Bold.ttf \
 
 
 %changelog
+* Sun Jun 01 2025 Andrea Musuruane <musuruan@gmail.com> - 3.1.63-9
+- Updated for new path of liberation-sans-fonts
+
 * Tue Jan 28 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3.1.63-8
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_42_Mass_Rebuild
 
