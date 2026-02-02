@@ -2,7 +2,7 @@
 
 Name:           fs-uae-arcade
 Version:        3.1.63
-Release:        10%{?dist}
+Release:        11%{?dist}
 Summary:        Fullscreen game browser for FS-UAE
 
 #  The entire source code is GPLv2+ except oyoyo which is MIT
@@ -85,6 +85,9 @@ ln -s %{_datadir}/fonts/liberation-sans-fonts/LiberationSans-Bold.ttf \
 
 
 %changelog
+* Mon Feb 02 2026 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3.1.63-11
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_44_Mass_Rebuild
+
 * Sun Jul 27 2025 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 3.1.63-10
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_43_Mass_Rebuild
 
